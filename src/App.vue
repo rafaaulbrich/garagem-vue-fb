@@ -1,4 +1,3 @@
-import router from './router';
 <template>
   <header>
     <router-link :to="{ name: 'home' }">Home</router-link> |
@@ -12,3 +11,4 @@ import router from './router';
     <RouterView />
   </main>
 </template>
+
