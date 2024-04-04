@@ -19,7 +19,7 @@ async function salvar() {
   if (marca.id) {
     await marcasApi.atualizarMarca(marca);
   } else {
-    await marcasApi.atualizarMarca(marca);
+    await marcasApi.adicionarMarca(marca);
   }
   marcas.value = await marcasApi.buscarTodasAsMarcas();
   limpar();

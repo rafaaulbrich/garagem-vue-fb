@@ -19,7 +19,7 @@ async function salvar() {
   if (cor.id) {
     await coresApi.atualizarCor(cor);
   } else {
-    await coresApi.atualizarCor(cor);
+    await coresApi.adicionarCor(cor);
   }
   cores.value = await coresApi.buscarTodasAsCores();
   limpar();

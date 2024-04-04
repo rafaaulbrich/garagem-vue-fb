@@ -19,7 +19,7 @@ async function salvar() {
   if (veiculo.id) {
     await veiculosApi.atualizarVeiculo(veiculo);
   } else {
-    await veiculosApi.atualizarVeiculo(veiculo);
+    await veiculosApi.adicionarVeiculo(veiculo);
   }
   veiculos.value = await veiculosApi.buscarTodosOsVeiculos();
   limpar();
